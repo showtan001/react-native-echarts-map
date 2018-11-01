@@ -1,0 +1,32 @@
+{
+  "name": "react-native-echarts-map",
+  "version": "0.0.1",
+  "description": "echarts for react-native",
+  "main": "src/index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/showtan001/react-native-echarts.git"
+  },
+  "keywords": [
+    "react-native",
+    "react-native-echarts",
+    "echarts",
+    "chart",
+    "charts"
+  ],
+  "author": "showtan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/showtan001/react-native-echarts"
+  },
+  "homepage": "https://github.com/showtan001/react-native-echarts#readme",
+  "dependencies": {
+    "echarts": "3.2.3"
+  }
+}
