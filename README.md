@@ -59,6 +59,64 @@ AppRegistry.registerComponent('app', () => app);
 
 ```
 
+## maps
+
+
+```js
+import React, { Component } from 'react';
+import { View } from 'react-native';
+import Echarts from 'react-native-echarts-map';
+
+type Props = {};
+export default class App extends Component<Props> {
+  render() {
+    const option = {
+      tooltip: {
+        trigger: 'item',
+        formatter: '{b}'
+      },
+      series: [{
+        name: '中国',
+        type: 'map',
+        map: 'china',
+        selectedMode: 'single',//multiple多选
+        itemStyle: {
+          normal: {
+            label: {
+              show: true,
+              textStyle: {
+                color: "#231816"
+              }
+            },
+            areaStyle: { color: '#B1D0EC' },
+            color: '#B1D0EC',
+            borderColor: '#dadfde'//区块的边框颜色
+          },
+          emphasis: {//鼠标hover样式
+            label: {
+              show: true,
+              textStyle: {
+                color: '#fa4f04'
+              }
+            }
+          }
+        },
+        data: [
+          { name: '四川', selected: true }
+        ]
+      }]
+    };
+    return (
+      <View style={{ marginTop: 100 }}>
+        <Echarts option={option} height={500} />
+      </View>
+    );
+  }
+}
+
+AppRegistry.registerComponent('app', () => app);
+
+```
 
 
 ##Example
@@ -78,6 +136,7 @@ Open the xcode project in the ios directory and click run
 screenshots：
 
 ![image](https://github.com/somonus/react-native-echarts/blob/master/example/demoIOS.png)
+![image](https://user-images.githubusercontent.com/32892347/48114641-cf909480-e29a-11e8-9f31-8749eb7d176b.png)
 
 ### Android
 
