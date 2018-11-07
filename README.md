@@ -136,7 +136,7 @@ Open the xcode project in the ios directory and click run
 screenshots：
 
 ![image](https://github.com/somonus/react-native-echarts/blob/master/example/demoIOS.png)
-![image](https://user-images.githubusercontent.com/32892347/48114641-cf909480-e29a-11e8-9f31-8749eb7d176b.png)
+![image](https://user-images.githubusercontent.com/32892347/48114964-13d06480-e29c-11e8-879f-57c2a820f539.png)
 
 ### Android
 
