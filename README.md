@@ -117,7 +117,7 @@ export default class App extends Component<Props> {
 ```
 
 
-##Example
+## Example
 
 *run demo*
 
