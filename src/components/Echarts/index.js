@@ -34,7 +34,14 @@ export default class App extends Component {
           }}
           scalesPageToFit={Platform.OS !== 'ios'}
           source={require('./tpl.html')}
-          onMessage={event => this.props.onPress ? this.props.onPress(JSON.parse(event.nativeEvent.data)) : null}
+          onMessage={event => {
+            eventobj = JSON.parse(event.nativeEvent.data);
+            if (eventobj.type == 'click') {
+              this.props.onPress ? this.props.onPress(eventobj) : null
+            } else if (eventobj.type == 'mapselectchanged') {
+              this.props.onMapSelectChanged ? this.props.onMapSelectChanged(eventobj) : null
+            }
+          }}
         />
       </View>
     );
